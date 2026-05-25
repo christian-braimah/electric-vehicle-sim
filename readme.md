@@ -93,8 +93,8 @@ vehicle-sim/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/chrisbraimah/epiroc-sim.git
-cd epiroc-sim
+git clone https://github.com/chrisbraimah/electric-vehicle-sim.git
+cd electric-vehicle-sim
 ```
 
 ### 2. Set Up the Database
@@ -262,14 +262,14 @@ Build and push the Docker image:
 
 ```bash
 cd server
-docker buildx build --platform linux/amd64 -t <dockerhub-user>/epiroc-sim-backend:latest --push .
+docker buildx build --platform linux/amd64 -t <dockerhub-user>/electric-vehicle-sim-backend:latest --push .
 ```
 
 On the EC2 instance, pull and run:
 
 ```bash
-docker pull <dockerhub-user>/epiroc-sim-backend:latest
-docker run -d --name epiroc-backend --env-file .env -p 4000:4000 --restart unless-stopped <dockerhub-user>/epiroc-sim-backend:latest
+docker pull <dockerhub-user>/electric-vehicle-sim-backend:latest
+docker run -d --name epiroc-backend --env-file .env -p 4000:4000 --restart unless-stopped <dockerhub-user>/electric-vehicle-sim-backend:latest
 ```
 
 ### Frontend (Apache on EC2)
