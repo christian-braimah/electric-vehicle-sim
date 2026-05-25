@@ -1,6 +1,6 @@
-# Epiroc FVT Vehicle Dashboard Simulator
+# Mining Vehicle Dashboard Simulator
 
-A real-time electric mining vehicle dashboard simulator built for the Epiroc EAE Full-Stack Developer Challenge. The application features a physics-based simulation engine, interactive controls, and live-updating gauges for monitoring vehicle metrics.
+A real-time electric mining vehicle dashboard simulator built for a mining electric vehicle. The application features a physics-based simulation engine, interactive controls, and live-updating gauges for monitoring vehicle metrics.
 
 **Live Demo:** [http://3.145.89.180](http://3.145.89.180)
 
@@ -35,7 +35,7 @@ A real-time electric mining vehicle dashboard simulator built for the Epiroc EAE
 ## Project Structure
 
 ```
-epiroc-sim/
+vehicle-sim/
 ├── client/                          # React frontend
 │   ├── src/
 │   │   ├── assets/                  # SVG icon components
